@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;  
+}
+body {
+  background-color: #e3f2fd;
+}
+.container {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 85px auto 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+ .container .input-field {
+   positon: relative;
+   height: 64px;
+   width: 100%;
+ }
+.input-field textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  fout-weight: 400;
+  border-raidus: 8px;
+  paddding: 18px 45px 18px 15px;
+  border: 1px solid #d3d3d3;
+  resize: none;
+}
+.input-field textarea:focus {
+  border-color:#4285f4;
+}
+textarea::webkit-scrollbar {
+  display: none;
+}
+.input-field .note-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+  font-size: 24px;
+}
+}
+.input-field textarea:focus ~ .note-icon{
+  color:#6699ea;
+}
+.container .todoLists {
+  margin-top: 20px;
+}
+.todoLists .list {
+  dispaly: flex;
+  align-items: center;
+  list-style: none;
+  backgroud-color: #fff;
+  padding: 20px 15px;
+  border-radius: 8px;
+  poisition: relative;
+}
+.todoLists .list i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #999;
+  font-size: 24px;
+}
