@@ -19,7 +19,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
  .container .input-field {
-   positon: relative;
+   position: relative;
    height: 64px;
    width: 100%;
  }
@@ -28,9 +28,9 @@ body {
   width: 100%;
   outline: none;
   font-size: 18px;
-  fout-weight: 400;
-  border-raidus: 8px;
-  paddding: 18px 45px 18px 15px;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 18px 45px 18px 15px;
   border: 1px solid #d3d3d3;
   resize: none;
 }
@@ -49,28 +49,72 @@ textarea::webkit-scrollbar {
   color: #999;
   font-size: 24px;
 }
-}
-.input-field textarea:focus ~ .note-icon{
+.input-field textarea:focus ~ .note-icon {
   color:#6699ea;
 }
 .container .todoLists {
   margin-top: 20px;
 }
 .todoLists .list {
-  dispaly: flex;
+  display: flex;
   align-items: center;
   list-style: none;
-  backgroud-color: #fff;
+  background-color: #fff;
   padding: 20px 15px;
   border-radius: 8px;
-  poisition: relative;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.todoLists .list input {
+  height: 16px;
+ min-width: 16px;
+  accent-color: #4285f4;  
+  /* pointer-events: none; */
+}
+.list input:cheked ~ .task {
+  text-decoration: line-through;
+}
+.todoLists .list .task {
+  margin: 0 30px 0 15px;
+  word-break: break-all;
 }
 .todoLists .list i {
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
   color: #999;
-  font-size: 24px;
+  font-size: 20px;
+  padding: 5px;
+  opacity: 0.6;
+  display: none;
+}
+.todoLists .list:hover i {
+  display: inline-flex;
+}
+.todoLists .list i:hover {
+  opacity: 1;
+}
+.container .pending-tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.pending-tasks span {
+  color: #333;
+}
+.pending-tasks .clear-button {
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  background: #4285f4;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clear-button:hover {
+  background: #0e4bf1;
 }
