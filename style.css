@@ -70,7 +70,7 @@ textarea::webkit-scrollbar {
   height: 16px;
  min-width: 16px;
   accent-color: #4285f4;  
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 .list input:cheked ~ .task {
   text-decoration: line-through;
